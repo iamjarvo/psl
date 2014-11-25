@@ -3,7 +3,11 @@ footer {
   background-color: $secondary-background-color;
   color: $footer-font-color;
   margin-bottom: 3em;
-  padding: 4em 8em;
+  padding: $container-padding-small;
+
+  @include media(em(550)) {
+    padding: $container-padding-large;
+  }
 }
 
 .thoughtbot {
@@ -26,8 +30,11 @@ footer {
 
   svg {
     @include size(8em);
-    float: left;
     margin-right: 1.5em;
+
+    @include media(400) {
+      text-align: left;
+    }
   }
 
   p {
@@ -36,7 +43,9 @@ footer {
 }
 
 .logo-wrapper {
-  @include span-columns(4);
+  @include media(em(1050)) {
+    @include span-columns(4);
+  }
 
   .logo {
     color: white;
@@ -48,9 +57,12 @@ footer {
 }
 
 .footer-navigation {
-  @include shift(2);
-  @include span-columns(6);
   margin-top: 3em;
+
+  @include media(em(1050)) {
+    @include shift(2);
+    @include span-columns(6);
+  }
 
   h3 {
     font-size: em(15);
@@ -72,7 +84,16 @@ footer {
   }
 
   .group {
-    @include span-columns(2 6);
+    margin-bottom: 2em;
+
+    @include media(em(600)) {
+      @include span-columns(4);
+      margin-bottom: 0;
+    }
+
+    @include media(em(1050)) {
+      @include span-columns(2 6);
+    }
   }
 
   .twitter {

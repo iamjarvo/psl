@@ -2,9 +2,12 @@
   @include clearfix;
 
   li {
-    @include span-columns(6);
-    @include omega(2n);
     margin-bottom: 3em;
+
+    @include media(em(750)) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
   }
 
   .photo {

@@ -1,6 +1,10 @@
 .main-content {
   background: $base-background-color;
-  padding: 4em 8em;
+  padding: $container-padding-small;
+
+  @include media(em(550)) {
+    padding: $container-padding-large;
+  }
 
   article {
     @include row;
@@ -16,7 +20,11 @@
       background-color: $base-border-color;
       border: none;
       margin: -4em -8em 0;
-      padding: 4em 8em;
+      padding: $container-padding-small;
+
+      @include media(em(550)) {
+        padding: $container-padding-large;
+      }
 
       h1 {
         margin-bottom: 1em;
