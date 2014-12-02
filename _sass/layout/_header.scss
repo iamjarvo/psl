@@ -39,8 +39,8 @@ $medium-header-break: em(850);
 
 .main-navigation {
   @include row;
-  font-size: em(15);
   float: right;
+  font-size: em(15);
 
   .navigation-list {
     @include media($mobile-navigation) {
@@ -68,8 +68,8 @@ $medium-header-break: em(850);
         > a {
           color: rgba(white, 0.8);
           font-size: em(14);
-          text-transform: uppercase;
           letter-spacing: 1px;
+          text-transform: uppercase;
 
           svg {
             display: none;
@@ -77,10 +77,10 @@ $medium-header-break: em(850);
         }
 
         ul {
+          background: none;
           display: block;
           position: static;
           width: auto;
-          background: none;
         }
       }
     }

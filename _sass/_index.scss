@@ -79,8 +79,8 @@
   }
 
   li {
-    margin-bottom: 3em;
     @include row;
+    margin-bottom: 3em;
 
     @include media(em(700)) {
       @include omega(2n);

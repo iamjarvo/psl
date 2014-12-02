@@ -47,13 +47,13 @@
     margin-bottom: 1em;
 
     @include media(min-width em(350) max-width em(599)) {
-      @include span-columns(6);
       @include omega(2n);
+      @include span-columns(6);
     }
 
     @include media(min-width em(600) max-width em(829)) {
-      @include span-columns(4);
       @include omega(3n);
+      @include span-columns(4);
     }
 
     @include media(em(830)) {

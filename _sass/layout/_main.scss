@@ -23,16 +23,16 @@
     &.featured {
       background-color: $base-border-color;
       border: none;
-      margin: -2em -2em 0;
+      margin: -2em -2em auto;
       padding: $container-padding-small;
 
       @include media($main-content-medium) {
-        margin: -4em -4em 0;
+        margin: -4em -4em auto;
         padding: $container-padding-medium;
       }
 
       @include media($main-content-large) {
-        margin: -4em -8em 0;
+        margin: -4em -8em auto;
         padding: $container-padding-large;
       }
 
